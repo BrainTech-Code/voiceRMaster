@@ -10,3 +10,9 @@ pyYAML
 requests
 sqlparse
 urllib3
+pyaudio
+
+/* 
+user: keadama
+password: 12345678
+*/
