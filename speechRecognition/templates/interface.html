@@ -7,10 +7,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>Interface de Reconnaissance Vocale</h1>
-        <button id="startBtn">Démarrer l'enregistrement</button>
-        <div id="result"></div>
+        <div class="background-image">
+            <!-- Mettez ici l'URL de votre image de fond -->
+            <img src="{% static 'images/bg_image.png'%}" alt="Image de fond">
+            <!-- Exemple : <img src="chemin/vers/votre-image.jpg" alt=""> -->
+        </div>
+            <div class="content">
+                <!-- <h1>Interface de Reconnaissance Vocale</h1> -->
+                <button id="recordButton" onclick="recordAudio('recordedFile')">Démarrer</button>
+                <input type="file" id="recordedFile" name="recordedFile" style="display: no;">
+            </div>
+            <div class="result-container">
+                <h2>Résultats :</h2>
+                <div id="result"></div>
+            </div>
     </div>
+    <!-- <script src="{% static 'script.js' %}"></script> -->
+    <script src="{% static 'record_audio.js' %}"></script>
 </body>
-<script src="{% static 'script.js' %}"></script>
 </html>
