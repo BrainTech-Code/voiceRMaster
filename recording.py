@@ -45,3 +45,4 @@ def record_audio(output_file, duration=5, sample_rate=44100, channels=1):
 output_file = "enregistrement_audio.wav"
 record_audio(output_file, duration=5)
 # Récupérer un fichier audio à partir d'un enregistrement audio
+
